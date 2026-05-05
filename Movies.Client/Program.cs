@@ -18,6 +18,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
         // For the CRUD samples
         services.AddScoped<IIntegrationService, CRUDSamples>();
 
+        services.AddHttpClient();
+
         // For the compression samples
         // services.AddScoped<IIntegrationService, CompressionSamples>();
 
